@@ -1,2 +1,1 @@
-# GradingNw
-Team Noway
+# simpleApp
