@@ -6,27 +6,35 @@ class Marks {
         
     }
     computeGrade() {
+        let score = null
         if(this.marks>=80){
-            console.log(`${this.student}, you are in grade A`)
+            // console.log(`${this.student}, you are in grade A`)
+            score = 'A'
         }else if(this.marks>=70&&this.marks<80){
-            console.log(`${this.student}, you are in grade B`)
+            // console.log(`${this.student}, you are in grade B`)
+            score = 'B'
         }
         else if(this.marks>=60&&this.marks<70){
-            console.log(`${this.student}, you are in grade C`)
+            // console.log(`${this.student}, you are in grade C`)
+            score = 'C'
         }
         else if(this.marks>=50&&this.marks<60){
-            console.log(`${this.student}, you are in grade D`)
+            // console.log(`${this.student}, you are in grade D`)
+            score = 'D'
         }
         else if(this.marks>=40&&this.marks<50){
-            console.log(`${this.student}, you are in grade E`)
+            // console.log(`${this.student}, you are in grade E`)
+            score = 'E'
         }
         else if(this.marks>0 &&this.marks<40){
-            console.log(`${this.student}, you are in grade F`)
+            // console.log(`${this.student}, you are in grade F`)
+            score = 'F'
         }
+        return score;
     }
     isValidate(){
 
-        valid=true
+        let valid=true
         if(this.student===null){
             valid=false
             console.log("student doesnt exist")
@@ -43,7 +51,7 @@ class Marks {
             valid=false
             console.log("Mark should be less than 100")
         }
-        // return valid
+        return valid
     } 
 }
  

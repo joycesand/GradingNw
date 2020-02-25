@@ -6,3 +6,5 @@ sandraGrade.computeGrade();
 
 const hajiGrade = new marks("Islam","Haruna",90);
 hajiGrade.computeGrade();
+
+module.exports = sandraGrade
